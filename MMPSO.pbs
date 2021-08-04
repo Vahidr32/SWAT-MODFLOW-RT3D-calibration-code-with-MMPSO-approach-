@@ -1,0 +1,11 @@
+#!/bin/bash -l 
+#PBS -N PSO_Huron 
+#PBS -l select=1:ncpus=60:mem=200Gb:host=n020 
+#PBS -l walltime=70:00:00 
+#PBS -P u1104091 
+#PBS -m abe 
+#PBS -M vahid.rafiei@usq.edu.au 
+#PBS -q default 
+module load python
+cd /home/u1104091/SWAT-MODFLOW-HPC-HuronRiver/SWAT-MODFLOW-PSO/CA-PSO
+python PSO_V7.py

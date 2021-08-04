@@ -1,0 +1,5 @@
+numpy==1.19.1
+pandas==1.1.1
+matplotlib==3.3.4
+scipy==1.5.2
+pyDOE==0.3.8
