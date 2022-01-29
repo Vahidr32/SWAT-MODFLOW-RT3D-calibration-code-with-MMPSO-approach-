@@ -1,0 +1,29 @@
+MODFLOW model directory: E:\SWAT-MODFLOW-INPUT\MODFLOW-model\MODFLOW-NorthJohnstone
+SWAT-MODFLOW model directory:E:\SWAT-MODFLOW-INPUT\SM-NorthJohnstone\SWAT-MODFLOW
+Directory of calibration: E:\Test\ModelCalibration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
