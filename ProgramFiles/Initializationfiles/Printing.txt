@@ -1,0 +1,32 @@
+9          | ITNS95: the iteration numnbers for printing the 95PPU of simulations (the followings are the iteration numbers)
+5
+15
+30
+44
+50
+100
+150
+200
+250
+##Defining the size of the fonts
+16    | Xtick_Font: the font size of the Xtick 
+16    | Ytick_Font: the font size of the Ytick 
+25    | YLabel_Font: the font size of the Ytick 
+22    | pad_Font: the font size of the pad 
+20    | Title_Font: the font size of the title
+18    | Legend_Font: the font size of the legends
+25    | W_Fig: the width of the figures
+8     |H_Fig: the height of the figures
+
+### Position of label, legend,title and pad
+upper left	|LegendP: The position of legend (the options are upper_left, upper_right) 
+left	|TitleP: the position of title (the options are left, right and center)
+0.7	|PadV: determine the postion of the pad vertically (between 0 and 1)
+0.05	|PadH: determine the postion of pad horizantally (between 0.2 and 0.01)
+15	|Padsize: The size of the pad
+0.5	|PadTrans: The pad tranparency
+
+## Defining the size for the spatial maps (Water table, GW elevation, GW NO3 concentration)
+20    | WS_Fig: the width of the spatial figures
+10     |HS_Fig: the height of the spatial figures
+30    | TitleS_Font: the font size of the Title in Spatial maps

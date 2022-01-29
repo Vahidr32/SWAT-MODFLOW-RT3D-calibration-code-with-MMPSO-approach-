@@ -1,0 +1,18 @@
+3	|NSOS: Number of stream observation stations (col1: name of observation station. Col2:the subbasin number belongs to the observation station. Col3: Objective Function, Col4: Weight of the observation, Col4&6: wieght of big and small values)
+3	Tungoil	70	1	KGE  1 0	0.05
+3	GlenStream	16	1	KGE  1 0	0.5 
+3	FisherCreek	83	1	KGE 1 0	2 
+
+
+3	|BSOS: Number of stream observation stations (col1: name of observation station. Col2:the subbasin number belongs to the observation station. Col3: Objective Function, Col4: Weight of the observation, Col4&6: wieght of big and small values)
+1	Bsaeflow_Tungoil	1	1	KGE 1 0 0.05
+2	Baseflow_GlenStream	1	1	KGE  1 0 0.5
+1	Baseflow_FisherCreek	1	1	KGE  1 0 2
+
+3	|NHOS:Number of head observation stations( The first column is the name of the observation station and the second column is the column of the simulation in swatmf_out_MF_obs file)
+2	Glen	1	5	KGE 2 20 2
+2	Mila	2	5	KGE 2 5 2
+1	Goondi	3	5	KGE 5 2 1
+
+1	|NSNOS: Number of NO3 observation stations (if the observation station for NO3 and streamflow are the same, they should be in the same order) 
+4	GoondiNO3Flux	70	1	KGE 0 30 2

@@ -1,0 +1,29 @@
+189	| NSB: Number of subbasins
+45	| NOP: Number of Particles (depending on the number of physical cores we recommend a value from 30 to 50)
+2	| MNIt: Maximum number of iterations
+5	| NSY: Number of simulation years (including the warm-up period)
+2014	| BYS: Begining year of simulation(including the warm-up period)
+1	| BJDS: Begining julian day of simulation(including the warm-up period)
+365	| EJDS: Final julian day of simulation
+1	| NYSKIP: Number of skipped years (number of the warm-up years)
+1	| NG: Number of group
+100	| NCores: Number of CPU cores (not activated yet)
+1	| NIS: Number of Initial iterations with LHS (it should be always bigger than 1)
+1	| MMPSO: Multi-memory PSO( 1=active, 0= inactive (using conventional PSO))
+300	| TCir1: First Termination criterion ( This is value of the total objective function)
+30	| TCir2: Second Termination Criterion ( This is the number of iteration that no change to the objective functions occured)
+300	| DPI: resolution for generating images
+141	| GW_rows: Groundwater rows (the 3rd row in the 'grid_dhru' file)
+168	| GW_Col: Groundwater columns (the 4th row in the 'grid_dhru' file)
+3	| GW_Layers: Groundwater layers
+1200	| TimeOut: The timeout of the simulation (Seconds). In case the simulation run time passes this threshold, it will be terminate
+1.8	| C1I: initial values of C1 (Convergance to global solution)
+1.8	| C1F: Final value of C1 
+1.8	| C2I: Initial value of C2 (Convergance to Local solution)
+1.8	| C2F: Final value of C2
+0.00	| RC: Change of random selection
+0.6	| InertiaMin: The minimum inertia weight in the ranking
+1.5	| InertiaMax: The maximum Inertia weight in the ranking
+0	| RFIP: Read from initial parameter file (0= no, 1=yes). if the parameters in the initial files exceed the max/min allowed range, they will set to the max/min value.
+0	| Copy_Particles: Copying particles for the begining (this value should be 1 for the first time and then set to 0)
+1	| Delete_Particles: Copying particles for the begining (this value should be 1 for the first time and then set to 0)
