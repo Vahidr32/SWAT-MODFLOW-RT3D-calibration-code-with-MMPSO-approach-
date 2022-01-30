@@ -11,7 +11,6 @@ with open (CL+'/setup.txt') as file:
     SWATMODFLOWHPC=lines[2][:-1]
     DSSWAT=lines[1][:-1]
 
-
 with open(DSSWAT+'/file.cio','r') as file:
     lines=file.readlines()
     for i in range(len(lines)):
@@ -21,10 +20,10 @@ with open(DSSWAT+'/file.cio','w') as file:
     for i in range(len(lines)):
         file.write(lines[i])
 
-
-
 os.mkdir(SWATMODFLOWHPC)
+os.mkdir(SWATMODFLOWHPC+'/Backup')
 copy_tree(DSSWAT, SWATMODFLOWHPC,preserve_mode=0)
+copy_tree(DSSWAT, SWATMODFLOWHPC+'/Backup',preserve_mode=0)
 SWATMODFLOWPSO=SWATMODFLOWHPC+'/SWAT-MODFLOW-PSO'
 os.mkdir(SWATMODFLOWPSO)
 copy_tree(CL+'/ProgramFiles/Initializationfiles', SWATMODFLOWPSO,preserve_mode=0)
@@ -43,7 +42,6 @@ Particles=SWATMODFLOWPSO+'/Particles'
 os.mkdir(Particles)
 MODFLOW=Particles+'/MODFLOW'
 os.mkdir(MODFLOW)
-
 
 Name=glob.glob(DSSWAT+"/*.nam")
 Names=['.pval','.bas','.dis','.btn','.rct','.riv']
