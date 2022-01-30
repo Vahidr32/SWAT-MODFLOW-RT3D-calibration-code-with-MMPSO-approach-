@@ -1,13 +1,7 @@
-MODFLOW model directory: E:\SWAT-MODFLOW-INPUT\MODFLOW-model\MODFLOW-NorthJohnstone
-SWAT-MODFLOW model directory:E:\SWAT-MODFLOW-INPUT\SM-NorthJohnstone\SWAT-MODFLOW
-Directory of calibration: E:\Test\ModelCalibration
-
-
-
-
-
-
-
+*********************First line is the directory of model, the second line is the direcotory of the calibration project******************
+E:/Test/SWAT-MODFLOW
+E:/Test/ModelCalibration
+*****************************************
 
 
 
