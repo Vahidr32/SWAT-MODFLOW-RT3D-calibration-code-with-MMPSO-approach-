@@ -1,14 +1,16 @@
 import os 
 from distutils.dir_util import copy_tree
 import shutil
+import ntpath
+import glob
 
 CL = os.path.dirname(os.path.abspath(__file__))
 
 with open (CL+'/setup.txt') as file:
     lines=file.readlines()
-    DMOD=lines[0][25:-1]
-    SWATMODFLOWHPC=lines[2][26:-1]
-    DSSWAT=lines[1][29:-1]
+    SWATMODFLOWHPC=lines[2][:-1]
+    DSSWAT=lines[1][:-1]
+
 
 with open(DSSWAT+'/file.cio','r') as file:
     lines=file.readlines()
@@ -41,5 +43,13 @@ Particles=SWATMODFLOWPSO+'/Particles'
 os.mkdir(Particles)
 MODFLOW=Particles+'/MODFLOW'
 os.mkdir(MODFLOW)
-copy_tree(DMOD, MODFLOW,preserve_mode=0)
+
+
+Name=glob.glob(DSSWAT+"/*.nam")
+Names=['.pval','.bas','.dis','.btn','.rct','.riv']
+for i in range(len(Names)):
+    try:
+        shutil.copy(DSSWAT+"/"+ntpath.basename(Name[0]).split('.')[0]+Names[i],MODFLOW+'/') 
+    except:
+        print(DSSWAT+"/"+ntpath.basename(Name[0]).split('.')[0]+Names[i])
 print('the SWAT-MODFLOW-HPC is ready to be transfered to your HPC account')
